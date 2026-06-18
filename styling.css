@@ -10,6 +10,95 @@ body{
     background-color: #EBE0D6;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0,0,0,0.95);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+    font-size: 40px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.prev:hover,
+.close:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.foto-grid img {
+    cursor: pointer;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.foto-grid {
+    width: 200px;
+    text-align: center;
+}
+
+.foto-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.foto-titel {
+    margin-top: 8px;
+}
+
+.foto-titel a {
+    text-decoration: none;
+    color: black;
+}
+
 .top-image img{
     width: 100%;
     height: 200px;
@@ -223,12 +312,10 @@ footer{
     font-family: Arial, sans-serif;
 }
 
-/* de aanvinkbare cirkels verbergen */
 .menu input[type="radio"] {
     display: none;
 }
 
-/* de genres stylen */
 .menu {
     text-align: center;
     padding: 20px;
@@ -244,12 +331,10 @@ footer{
     cursor: pointer;
 }
 
-/* maakt de aangevinkte genre blauw */
 .menu input[type="radio"]:checked + label {
     color: #C6AD8F;
 }
 
-/* Game Grid Section */
 .game-grid {
     display: flex;
     justify-content: space-around;
