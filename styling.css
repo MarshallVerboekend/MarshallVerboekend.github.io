@@ -494,7 +494,7 @@ footer {
 
     .navbar {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
