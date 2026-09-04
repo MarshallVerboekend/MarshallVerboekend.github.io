@@ -240,13 +240,6 @@ laadFotos(
 );
 
 // Wild life curacao
-laadFotos(
-    "WildLife_Cura",
-    "WildLife_Curacao"
-);
+
 
 // Hoenderdaell
-laadFotos(
-    "Hoender",
-    "Hoenderdaell_Zoo"
-);
