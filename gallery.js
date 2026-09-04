@@ -238,3 +238,15 @@ laadFotos(
     "Street_Art_Cura",
     "Street_Art_Curacao"
 );
+
+// Wild life curacao
+laadFotos(
+    "WildLife_Cura",
+    "WildLife_Curacao"
+);
+
+// Hoenderdaell
+laadFotos(
+    "Hoender",
+    "Hoenderdaell_Zoo"
+);
